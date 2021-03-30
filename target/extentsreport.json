@@ -1,0 +1,98 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2870696900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Consultar Item",
+        "description": "",
+        "id": "consulta;consultar-item",
+        "after": [
+          {
+            "result": {
+              "duration": 795969600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2479561700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que acesso a Wikpedia em portugues",
+            "match": {
+              "location": "Post.queAcessoAWikpediaEmPortugues()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 1274240000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "pesquiso por \"David Bowie\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "David Bowie",
+                  "offset": 14
+                }
+              ],
+              "location": "Post.pesquisoPor(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 30358200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Exibe expressao \"David Bowie\" no titulo da guia",
+            "match": {
+              "arguments": [
+                {
+                  "val": "David Bowie",
+                  "offset": 17
+                }
+              ],
+              "location": "Post.exibeExpressaoNoTituloDaGuia(String)"
+            },
+            "keyword": "Entao "
+          }
+        ]
+      }
+    ],
+    "name": "Consulta",
+    "description": "",
+    "id": "consulta",
+    "keyword": "Funcionalidade",
+    "uri": "Post.feature"
+  }
+]
