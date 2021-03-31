@@ -1,18 +1,12 @@
 [
   {
-    "comments": [
-      {
-        "line": 1,
-        "value": "#language: pt"
-      }
-    ],
-    "line": 4,
+    "line": 2,
     "elements": [
       {
         "before": [
           {
             "result": {
-              "duration": 2870696900,
+              "duration": 1771743300,
               "status": "passed"
             },
             "match": {
@@ -20,14 +14,14 @@
             }
           }
         ],
-        "line": 6,
+        "line": 3,
         "name": "Consultar Item",
         "description": "",
-        "id": "consulta;consultar-item",
+        "id": "consulta-item;consultar-item",
         "after": [
           {
             "result": {
-              "duration": 795969600,
+              "duration": 921117200,
               "status": "passed"
             },
             "match": {
@@ -36,26 +30,26 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Cenario",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2479561700,
+              "duration": 3294079200,
               "status": "passed"
             },
-            "line": 7,
+            "line": 4,
             "name": "que acesso a Wikpedia em portugues",
             "match": {
               "location": "Post.queAcessoAWikpediaEmPortugues()"
             },
-            "keyword": "Dado "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1274240000,
+              "duration": 1450741900,
               "status": "passed"
             },
-            "line": 8,
+            "line": 5,
             "name": "pesquiso por \"David Bowie\"",
             "match": {
               "arguments": [
@@ -66,14 +60,14 @@
               ],
               "location": "Post.pesquisoPor(String)"
             },
-            "keyword": "Quando "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 30358200,
+              "duration": 372665100,
               "status": "passed"
             },
-            "line": 9,
+            "line": 6,
             "name": "Exibe expressao \"David Bowie\" no titulo da guia",
             "match": {
               "arguments": [
@@ -84,15 +78,15 @@
               ],
               "location": "Post.exibeExpressaoNoTituloDaGuia(String)"
             },
-            "keyword": "Entao "
+            "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Consulta",
+    "name": "Consulta item",
     "description": "",
-    "id": "consulta",
-    "keyword": "Funcionalidade",
+    "id": "consulta-item",
+    "keyword": "Feature",
     "uri": "Post.feature"
   }
 ]

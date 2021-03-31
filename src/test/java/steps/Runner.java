@@ -6,16 +6,15 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/features",
+        features = "src/test/resources/features/",
         glue = "steps",
-        dryRun = false,
-        monochrome = true,
+        strict = true,
         plugin = {
+
                 "pretty",
-                "html:target/extentsreport",
-                "json:target/extentsreport.json",
-
-
+                "html:target/RelatorioSimples",
+                "json:target/RelatorioSimples.json",
+                "com.vimalselvam.cucumber.listener.ExtentCucumberFormatter:target/dashboard.html"
         }
 )
 public class Runner {

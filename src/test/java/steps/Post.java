@@ -1,5 +1,8 @@
 package steps;
 
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
@@ -16,6 +19,7 @@ public class Post {
         this.base = base;
     }
 
+    /*
     @Dado("^que acesso a Wikpedia em portugues$")
     public void queAcessoAWikpediaEmPortugues() {
         base.driver.get(base.url);
@@ -28,6 +32,22 @@ public class Post {
     }
 
     @Entao("^Exibe expressao \"([^\"]*)\" no titulo da guia$")
+    public void exibeExpressaoNoTituloDaGuia(String item)  {
+        assertTrue(base.driver.getTitle().contains(item));
+
+    }*/
+    @Given("^que acesso a Wikpedia em portugues$")
+    public void queAcessoAWikpediaEmPortugues() {
+        base.driver.get(base.url);
+    }
+
+    @When("^pesquiso por \"([^\"]*)\"$")
+    public void pesquisoPor(String item) {
+        base.driver.findElement(By.id("searchInput")).sendKeys(item + Keys.ENTER);
+
+    }
+
+    @Then("^Exibe expressao \"([^\"]*)\" no titulo da guia$")
     public void exibeExpressaoNoTituloDaGuia(String item)  {
         assertTrue(base.driver.getTitle().contains(item));
 

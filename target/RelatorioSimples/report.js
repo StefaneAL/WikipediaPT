@@ -1,49 +1,43 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Post.feature");
 formatter.feature({
-  "comments": [
-    {
-      "line": 1,
-      "value": "#language: pt"
-    }
-  ],
-  "line": 4,
-  "name": "Consulta",
+  "line": 2,
+  "name": "Consulta item",
   "description": "",
-  "id": "consulta",
-  "keyword": "Funcionalidade"
+  "id": "consulta-item",
+  "keyword": "Feature"
 });
 formatter.before({
-  "duration": 2870696900,
+  "duration": 1771743300,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 6,
+  "line": 3,
   "name": "Consultar Item",
   "description": "",
-  "id": "consulta;consultar-item",
+  "id": "consulta-item;consultar-item",
   "type": "scenario",
-  "keyword": "Cenario"
+  "keyword": "Scenario"
 });
 formatter.step({
-  "line": 7,
+  "line": 4,
   "name": "que acesso a Wikpedia em portugues",
-  "keyword": "Dado "
+  "keyword": "Given "
 });
 formatter.step({
-  "line": 8,
+  "line": 5,
   "name": "pesquiso por \"David Bowie\"",
-  "keyword": "Quando "
+  "keyword": "When "
 });
 formatter.step({
-  "line": 9,
+  "line": 6,
   "name": "Exibe expressao \"David Bowie\" no titulo da guia",
-  "keyword": "Entao "
+  "keyword": "Then "
 });
 formatter.match({
   "location": "Post.queAcessoAWikpediaEmPortugues()"
 });
 formatter.result({
-  "duration": 2479561700,
+  "duration": 3294079200,
   "status": "passed"
 });
 formatter.match({
@@ -56,7 +50,7 @@ formatter.match({
   "location": "Post.pesquisoPor(String)"
 });
 formatter.result({
-  "duration": 1274240000,
+  "duration": 1450741900,
   "status": "passed"
 });
 formatter.match({
@@ -69,11 +63,11 @@ formatter.match({
   "location": "Post.exibeExpressaoNoTituloDaGuia(String)"
 });
 formatter.result({
-  "duration": 30358200,
+  "duration": 372665100,
   "status": "passed"
 });
 formatter.after({
-  "duration": 795969600,
+  "duration": 921117200,
   "status": "passed"
 });
 });
